@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(XylophoneApp());
-
 class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,3 +12,5 @@ class XylophoneApp extends StatelessWidget {
     );
   }
 }
+
+void main() => runApp(XylophoneApp());
