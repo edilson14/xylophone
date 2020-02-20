@@ -12,7 +12,7 @@ class _PlayerState extends State<Player> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           PlayerButton(flatButtonColor: Colors.red, audioNumber: 1),
           PlayerButton(flatButtonColor: Colors.orange, audioNumber: 2),
