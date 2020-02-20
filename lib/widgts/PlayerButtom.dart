@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
+import 'package:xylophone/utils/utils.dart';
 
 class PlayerButton extends StatelessWidget {
   final Color flatButtonColor;
   final int audioNumber;
 
-  PlayerButton(
-      {Key key, @required this.flatButtonColor, @required this.audioNumber});
-
-  void playAudio(int soundNumber) {
-    final player = AudioCache();
-    player.play('note$audioNumber.wav');
-  }
+  PlayerButton(this.flatButtonColor, this.audioNumber);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +13,7 @@ class PlayerButton extends StatelessWidget {
       child: FlatButton(
         padding: EdgeInsets.all(0),
         color: flatButtonColor,
-        onPressed: () => playAudio(audioNumber),
+        onPressed: () => Utils.playSound(soundNumber: audioNumber),
         child: null,
       ),
     );

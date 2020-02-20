@@ -14,13 +14,13 @@ class _PlayerState extends State<Player> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          PlayerButton(flatButtonColor: Colors.red, audioNumber: 1),
-          PlayerButton(flatButtonColor: Colors.orange, audioNumber: 2),
-          PlayerButton(flatButtonColor: Colors.yellow, audioNumber: 3),
-          PlayerButton(flatButtonColor: Colors.green, audioNumber: 4),
-          PlayerButton(flatButtonColor: Colors.teal, audioNumber: 5),
-          PlayerButton(flatButtonColor: Colors.blue, audioNumber: 6),
-          PlayerButton(flatButtonColor: Colors.purple, audioNumber: 7)
+          PlayerButton( Colors.red,  1),
+          PlayerButton( Colors.orange,  2),
+          PlayerButton( Colors.yellow,  3),
+          PlayerButton( Colors.green,  4),
+          PlayerButton( Colors.teal,  5),
+          PlayerButton( Colors.blue,  6),
+          PlayerButton( Colors.purple,  7)
         ],
       ),
     );
