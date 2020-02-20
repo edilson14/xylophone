@@ -5,7 +5,12 @@ class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Colors.black,
+      theme: ThemeData(
+        backgroundColor: Colors.black,
+      ),
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: Player(),
       ),
     );
